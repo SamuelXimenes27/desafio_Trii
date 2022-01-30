@@ -1,0 +1,110 @@
+body {
+    background: #9bdafa !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 0 !important;
+    box-shadow: 0 0 20px rgba(179, 172, 172, 0.603);
+}
+
+.card-body {
+    padding: 2rem;
+    margin: 0 40px 0 40px;
+}
+
+
+/*ESPAÇAMENTOS*/
+
+.title {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 35px;
+}
+
+.mb-3 {
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+
+/*ESTILIZAÇÃO DOS INPUTS*/
+
+textarea[id="floatingTextarea"] {
+    resize: none;
+}
+
+textarea[id="floatingTextarea"]:focus {
+    outline: 1px solid #9bdafa
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea[id="floatingTextarea"]:focus,
+#floatingSelect:focus {
+    outline: 1px solid #9bdafa;
+}
+
+input+label,
+textarea+label {
+    color: gray;
+    font-size: 20px;
+}
+
+input:focus+label,
+textarea:focus+label {
+    color: #0875bd;
+    font-size: 15px;
+}
+
+select.form-select {
+    background-image: linear-gradient(45deg, transparent 50%, #0875bd 50%), linear-gradient(135deg, #0875bd 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 5px 0;
+}
+
+select.form-select:focus {
+    background-image: linear-gradient(45deg, #0875bd 50%, transparent 50%), linear-gradient(135deg, transparent 50%, #0875bd 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 5px 0;
+}
+
+
+/*ESTILIZAÇÃO DO BOTAO*/
+
+#botao {
+    display: flex;
+    justify-content: end;
+}
+
+.formulario button[type="submit"] {
+    width: 150px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #0875bd;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s;
+    padding: 12px;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(179, 172, 172, 0.603);
+}
+
+.formulario button[type="submit"]:hover {
+    background: #06558a;
+}
+
+.alertify-notifier {
+    text-align: center;
+    margin: 0 -250px;
+}
